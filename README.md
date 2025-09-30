@@ -1,2 +1,2 @@
 # sgad-referee-management
-Servicio encargado de gestionar toda la información relacionada con los árbitros y su disposición.
+Servicio de gestión de información de los árbitros y su disposición.
