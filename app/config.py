@@ -8,7 +8,7 @@ class Settings:
     POSTGRES_USER: str = os.getenv("POSTGRES_USER")
     POSTGRES_PASSWORD: str = os.getenv("POSTGRES_PASSWORD")
     POSTGRES_HOST: str = os.getenv("POSTGRES_HOST", "sgad-postgres")
-    POSTGRES_PORT: str = os.getenv("POSTGRES_PORT", "5432")
+    POSTGRES_PORT: str = os.getenv("POSTGRES_PORT", "5433")
 
     DATABASE_URL: str = os.getenv(
         "DATABASE_URL",

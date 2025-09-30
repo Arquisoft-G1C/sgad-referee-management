@@ -5,6 +5,8 @@ from typing import List
 
 from app.database import get_db
 from app import repository, schemas
+from app.repository import RefereeUpdate, RefereeCreate
+from app.schemas import RefereeOut
 
 router = APIRouter(prefix="/referees", tags=["Referees"])
 

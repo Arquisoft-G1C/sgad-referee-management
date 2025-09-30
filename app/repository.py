@@ -2,6 +2,9 @@ from sqlalchemy.orm import Session
 from uuid import UUID
 from typing import List, Optional
 from app import models, schemas
+from app.models import Referee
+from app.schemas import RefereeCreate, RefereeUpdate
+
 
 def create_referee(db: Session, referee_in: RefereeCreate) -> Referee:
     db_ref = Referee(**referee_in.dict())

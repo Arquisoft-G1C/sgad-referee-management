@@ -31,3 +31,6 @@ class RefereeInDB(RefereeBase):
 
     class Config:
         orm_mode = True
+
+class RefereeOut(RefereeInDB):
+    pass

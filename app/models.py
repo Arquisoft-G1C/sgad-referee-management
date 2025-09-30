@@ -20,6 +20,3 @@ class Referee(Base):
 
     created_at = Column(TIMESTAMP(timezone=True), server_default=text("CURRENT_TIMESTAMP"))
     updated_at = Column(TIMESTAMP(timezone=True), server_default=text("CURRENT_TIMESTAMP"), onupdate=text("CURRENT_TIMESTAMP"))
-
-    # Relación con el usuario (si quieres acceder desde ORM)
-    user = relationship("User", back_populates="referees")
